@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 #include "../utils/calculate-water-force.h"
 
@@ -22,7 +21,7 @@ int main() {
     printf("РЕЗУЛЬТАТ: Сила давления воды F = %.2f Ньютон (Н)\n", force);
     
     printf("\n--------------------------------------------------\n");
-    
+
     printf("Нажмите Enter для выхода...");
     while (getchar() != '\n'); // очистка буфера
     getchar(); // ожидание Enter
