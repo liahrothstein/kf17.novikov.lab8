@@ -3,6 +3,7 @@
 #include "../utils/calculate-water-force.h"
 #include "../utils/calculate-cube-params.h"
 #include "../utils/array-process.h"
+#include "../utils/custom-sys-pause.h"
 
 int main() {
     double depth, area, force;
@@ -26,9 +27,7 @@ int main() {
     
     printf("\n--------------------------------------------------\n");
     
-    printf("Нажмите Enter для продолжения...");
-    while (getchar() != '\n'); // очистка буфера
-    getchar(); // ожидание Enter
+    customSystemPause(1);
     
     // ================== ЗАДАЧА 2 ==================
     
@@ -49,9 +48,7 @@ int main() {
     
     printf("\n--------------------------------------------------\n");
 
-    printf("Нажмите Enter для продолжения...");
-    while (getchar() != '\n'); // очистка буфера
-    getchar(); // ожидание Enter
+    customSystemPause(1);
 
     // ================== ЗАДАЧА 3 ==================
 
@@ -82,9 +79,7 @@ int main() {
         printf("Элементов, удовлетворяющих условию (|x| < %d), не найдено.\n", mLimit);
     }
 
-    printf("\nНажмите Enter для выхода...");
-    while (getchar() != '\n'); // очистка буфера
-    getchar(); // ожидание Enter
+    customSystemPause(0);
     
     return 0;
 }

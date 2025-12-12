@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 #include "../utils/calculate-water-force.h"
+#include "../utils/custom-sys-pause.h"
 
 int main() {
     double depth, area, force;
@@ -22,9 +23,7 @@ int main() {
     
     printf("\n--------------------------------------------------\n");
 
-    printf("Нажмите Enter для выхода...");
-    while (getchar() != '\n'); // очистка буфера
-    getchar(); // ожидание Enter
+    customSystemPause(0);
     
     return 0;
 }
