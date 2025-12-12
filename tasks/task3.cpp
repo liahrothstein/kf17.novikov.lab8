@@ -32,20 +32,20 @@ int main() {
     
     // ================== ЗАДАЧА 2 ==================
     
-    double edge_a;
-    double vol, s_total, s_face; // Переменные для хранения результатов
+    double edgeA;
+    double vol, sTotal, sFace; // Переменные для хранения результатов
     
     printf("\n\nВведите длину ребра куба A (м): ");
-    scanf("%lf", &edge_a);
+    scanf("%lf", &edgeA);
     
     // Вызов функции с передачей адресов переменных для записи результатов
-    calculateCubeParams(edge_a, &vol, &s_total, &s_face);
+    calculateCubeParams(edgeA, &vol, &sTotal, &sFace);
     
     // Вывод результатов
     printf("РЕЗУЛЬТАТЫ:\n");
     printf("Объем куба V = %.2f м^3\n", vol);
-    printf("Площадь полной поверхности S_полн = %.2f м^2\n", s_total);
-    printf("Площадь одной грани S_гр = %.2f м^2\n", s_face);
+    printf("Площадь полной поверхности S_полн = %.2f м^2\n", sTotal);
+    printf("Площадь одной грани S_гр = %.2f м^2\n", sFace);
     
     printf("\n--------------------------------------------------\n");
 
@@ -56,9 +56,9 @@ int main() {
     // ================== ЗАДАЧА 3 ==================
 
     int arr[10];
-    int i, m_limit;
-    long long prod_result = 1; // Инициализация произведения
-    int count_result = 0;      // Инициализация счетчика
+    int i, mLimit;
+    long long prodResult = 1; // Инициализация произведения
+    int countResult = 0;      // Инициализация счетчика
 
     // Ввод массива
     printf("\n\nВведите 10 целых чисел для массива:\n");
@@ -68,18 +68,18 @@ int main() {
     }
 
     printf("Введите ограничивающее число m: ");
-    scanf("%d", &m_limit);
+    scanf("%d", &mLimit);
 
     // Вызов функции обработки массива
-    arrayProcess(arr, 10, m_limit, &prod_result, &count_result);
+    arrayProcess(arr, 10, mLimit, &prodResult, &countResult);
 
     // Вывод результатов
-    if (count_result > 0) {
+    if (countResult > 0) {
         printf("РЕЗУЛЬТАТЫ:\n");
-        printf("Количество элементов (|x| < %d): %d шт.\n", m_limit, count_result);
-        printf("Произведение этих элементов: %lld\n", prod_result);
+        printf("Количество элементов (|x| < %d): %d шт.\n", mLimit, countResult);
+        printf("Произведение этих элементов: %lld\n", prodResult);
     } else {
-        printf("Элементов, удовлетворяющих условию (|x| < %d), не найдено.\n", m_limit);
+        printf("Элементов, удовлетворяющих условию (|x| < %d), не найдено.\n", mLimit);
     }
 
     printf("\nНажмите Enter для выхода...");

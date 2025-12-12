@@ -31,20 +31,20 @@ int main() {
     
     // ================== ЗАДАЧА 2 ==================
     
-    double edge_a;
-    double vol, s_total, s_face; // Переменные для хранения результатов
+    double edgeA;
+    double vol, sTotal, sFace; // Переменные для хранения результатов
     
     printf("\n\nВведите длину ребра куба A (м): ");
-    scanf("%lf", &edge_a);
+    scanf("%lf", &edgeA);
     
     // Вызов функции с передачей адресов переменных для записи результатов
-    calculateCubeParams(edge_a, &vol, &s_total, &s_face);
+    calculateCubeParams(edgeA, &vol, &sTotal, &sFace);
     
     // Вывод результатов
     printf("РЕЗУЛЬТАТЫ:\n");
     printf("Объем куба V = %.2f м^3\n", vol);
-    printf("Площадь полной поверхности S_полн = %.2f м^2\n", s_total);
-    printf("Площадь одной грани S_гр = %.2f м^2\n", s_face);
+    printf("Площадь полной поверхности S_полн = %.2f м^2\n", sTotal);
+    printf("Площадь одной грани S_гр = %.2f м^2\n", sFace);
     
     printf("\n--------------------------------------------------\n");
 
