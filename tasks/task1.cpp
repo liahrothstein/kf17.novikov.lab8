@@ -2,13 +2,12 @@
 
 #include "../utils/calculate-water-force.h"
 #include "../utils/custom-sys-pause.h"
+#include "../utils/task-info.h"
 
 int main() {
     double depth, area, force;
 
-    printf("Программа вычисляет силу давления в воде на глубине Н метров, по формуле: F = ρ * g * H * S (ρ=1000, g=9.81)");
-    printf("\nИсполнитель: Новиков Д. А.");
-    printf("\nВариант: №14");
+    taskInfo(1);
     
     printf("\n\nВведите глубину погружения H (м): ");
     scanf("%lf", &depth);

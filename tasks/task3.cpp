@@ -4,13 +4,12 @@
 #include "../utils/calculate-cube-params.h"
 #include "../utils/array-process.h"
 #include "../utils/custom-sys-pause.h"
+#include "../utils/task-info.h"
 
 int main() {
     double depth, area, force;
 
-    printf("Программа вычисляет:\n    - Силу давления в воде на глубине Н метров, по формуле: F = ρ * g * H * S (ρ=1000, g=9.81)\n    - Объем, площадь поверхности и грани куба с ребром А\n    - Произведение и количество элементов массива, по модулю меньших m");
-    printf("\nИсполнитель: Новиков Д. А.");
-    printf("\nВариант: №14");
+    taskInfo(3);
 
     // ================== ЗАДАЧА 1 ==================
     
